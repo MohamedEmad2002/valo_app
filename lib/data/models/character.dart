@@ -1,5 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:untitled1/data/models/abilities.dart';
+import 'package:untitled1/data/models/role.dart';
 import 'package:untitled1/data/models/voice_line.dart';
 
 class CharacterModel {
@@ -7,6 +8,7 @@ class CharacterModel {
   String description;
   String displayIcon;
   String fullPortrait;
+  Role role;
 
   late List<Ability> abilities;
   Voiceline voice_line;
@@ -17,5 +19,6 @@ class CharacterModel {
     required this.displayIcon,
     required this.fullPortrait,
     required this.voice_line,
+    required this.role
   });
 }
