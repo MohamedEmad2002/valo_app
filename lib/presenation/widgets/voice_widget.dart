@@ -1,5 +1,6 @@
 
 import 'dart:async';
+import 'dart:js_util';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
@@ -21,6 +22,7 @@ class VoiceWidget extends StatefulWidget {
 }
 
 class _VoiceWidgetState extends State<VoiceWidget> {
+  final AudioPlayer audioPlayer = AudioPlayer();
   final String url;
   final PlayerMode mode;
   late AudioPlayer _audioplayer;
